@@ -1,0 +1,126 @@
+<!-- 
+  ========================================================================
+  NOTAS DE EDICIÓN RÁPIDA:
+  - Textos, nombres y fechas: Modifica las etiquetas h1, h2 y spans dentro de las secciones principales.
+  - Enlaces: Actualiza los href en los botones de Google Maps y WhatsApp, así como los de Atelier Digital al final.
+  - Imágenes y Rutas: Reemplaza las rutas en los atributos src (por ejemplo, assets/images/logo.png).
+  - Colores: Los estilos de color base se controlan en styles.css.
+  ========================================================================
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boda Maleny & Ismael</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Portada de Bienvenida -->
+    <section id="portada" class="portada-section">
+        <div class="portada-content">
+            <span class="sub-lead">Nuestra Boda</span>
+            <h1>Maleny & Ismael</h1>
+            <p class="fecha-portada">28 . 11 . 2026</p>
+            <button id="btn-abrir" class="btn-principal">Abrir Invitación</button>
+        </div>
+    </section>
+
+    <!-- Contenido Principal de la Invitación (Oculto inicialmente hasta abrir) -->
+    <main id="invitacion-main" class="invitacion-main hidden">
+
+        <!-- Sección Dedicatoria / Presentación -->
+        <section class="seccion intro-seccion">
+            <div class="ornamento">❧</div>
+            <p class="texto-intro">
+                "Hay momentos en la vida que son inolvidables, compartirlos con las personas que amamos los hace eternos."
+            </p>
+            <h2>Maleny Acosta & Ismael García</h2>
+            <p class="sub-intro">Tenemos el honor de invitarle a celebrar nuestra boda.</p>
+        </section>
+
+        <!-- Cuenta Regresiva -->
+        <section class="seccion cuenta-regresiva-seccion">
+            <h3>Faltan</h3>
+            <div id="countdown" class="countdown-grid">
+                <div class="time-box"><span id="days">00</span><label>Días</label></div>
+                <div class="time-box"><span id="hours">00</span><label>Horas</label></div>
+                <div class="time-box"><span id="minutes">00</span><label>Minutos</label></div>
+                <div class="time-box"><span id="seconds">00</span><label>Segundos</label></div>
+            </div>
+        </section>
+
+        <!-- Itinerario del Evento -->
+        <section class="seccion itinerario-seccion">
+            <h3>Itinerario</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">⛪</div>
+                    <div class="timeline-content">
+                        <h4>Ceremonia</h4>
+                        <span class="hora">4:30 PM</span>
+                    </div>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-item">
+                    <div class="timeline-icon">🥂</div>
+                    <div class="timeline-content">
+                        <h4>Coctel de Bienvenida</h4>
+                        <span class="hora">5:30 PM</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ubicación y Lugar -->
+        <section class="seccion ubicacion-seccion">
+            <h3>Ubicación</h3>
+            <div class="card-lugar">
+                <h4>Hacienda San José Actipan</h4>
+                <p>Tonantzintla Hacienda, Km 2.1 Carretera Cholula<br>San José Actipan, 72817 San Andrés Cholula, Pue., México</p>
+                <a href="https://maps.google.com/maps/place//data=!4m2!3m1!1s0x85cfc87c320cb541:0x3796f0bf6533a8167" target="_blank" class="btn-secundario">Ver en Google Maps</a>
+            </div>
+        </section>
+
+        <!-- Código de Vestimenta -->
+        <section class="seccion dresscode-seccion">
+            <h3>Código de Vestimenta</h3>
+            <div class="dresscode-box">
+                <div class="icon-dress">👔👗</div>
+                <h4>Formal</h4>
+                <p>Sugerencia de color: Evitar tonos blancos o marfil.</p>
+            </div>
+        </section>
+
+        <!-- Confirmación de Asistencia (RSVP) -->
+        <section class="seccion rsvp-seccion">
+            <h3>Confirmación de Asistencia</h3>
+            <p>Por favor confirma tu asistencia antes del 15 de noviembre de 2026.</p>
+            <a href="https://wa.me/?text=¡Hola!%20Confirmo%20con%20mucho%20gusto%20mi%20asistencia%20a%20la%20boda%20de%20Maleny%20e%20Ismael." target="_blank" class="btn-whatsapp">Confirmar por WhatsApp</a>
+        </section>
+
+        <!-- Crédito de Marca: Atelier Digital (Sutil) -->
+        <footer class="atelier-footer">
+            <div class="atelier-container">
+                <img src="assets/logo.png" alt="Atelier Digital Logo" class="atelier-logo">
+                <p class="atelier-text">Diseño con elegancia por <strong>Atelier Digital</strong></p>
+                <div class="atelier-socials">
+                    <a href="https://www.instagram.com/atelier.digitalmx?utm_source=ig_web_button_share_sheet&srtk=ZDNlZDc0MzIxNw==" target="_blank" aria-label="Instagram">Instagram</a>
+                    <span>•</span>
+                    <a href="https://www.facebook.com/profile.php?id=61595745845232" target="_blank" aria-label="Facebook">Facebook</a>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Script JS -->
+    <script src="script.js"></script>
+</body>
+</html>
